@@ -9,7 +9,7 @@ function Hero() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
       >
-        Hi, I'm Cinda 👋
+        Hi, I'm Jacinda 👋
       </motion.h2>
 
       <motion.p

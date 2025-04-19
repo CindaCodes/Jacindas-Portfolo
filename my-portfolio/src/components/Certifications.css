@@ -1,0 +1,143 @@
+.certifications-section {
+  background: #fff;
+  padding: 4rem 2rem;
+  overflow: hidden;
+  text-align: center;
+}
+
+.certifications-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.marquee {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.marquee-content {
+  display: flex;
+  width: fit-content;
+  animation: scroll 40s linear infinite;
+}
+
+.marquee-content img {
+  height: 120px;
+  margin: 0 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cert-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 0 1rem;
+  padding: 1rem;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cert-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.cert-card img {
+  height: 120px;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.cert-info h3 {
+  margin: 0.5rem 0;
+  font-size: 1.25rem;
+}
+
+.cert-info p {
+  margin: 0.25rem 0;
+  color: #555;
+}
+
+.featured-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 3rem;
+  margin-top: 3rem;
+}
+
+.big-diploma,
+.tech-stack {
+  flex: 1;
+  min-width: 280px;
+  max-width: 500px;
+  text-align: center;
+}
+
+.tech-list {
+  list-style-type: none;
+  padding: 0;
+  font-size: 1.1rem;
+  color: #333;
+  line-height: 2;
+}
+
+.tech-list li::before {
+  content: "💻 ";
+  margin-right: 0.5rem;
+  color: #6b21a8;
+}
+
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 3rem;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.tech-grid div {
+  background-color: #f3f4f6;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+  @media (max-width: 965px) {
+  .tech-stack {
+    flex: 1 1 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .marquee-content img {
+    height: 90px;
+    margin: 0 0.5rem;
+  }
+
+  .cert-card img {
+    height: 90px;
+  }
+
+  .certifications-section h2 {
+    font-size: 2rem;
+  }
+}
