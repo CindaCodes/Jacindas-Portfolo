@@ -1,8 +1,16 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.theme-toggle {
+  padding: 0.5rem 1rem;
+  border: none;
+  background: #eee;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .logo {

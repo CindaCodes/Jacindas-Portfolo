@@ -1,32 +1,28 @@
-function Navbar() {
+import React from "react";
+import Container from "react-bootstrap/Container";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
+
+function PortfolioNavbar() {
   return (
-    <nav className="flex justify-between items-center px-8 py-4 bg-white shadow-md fixed w-full z-50">
-      <h1 className="text-2xl font-bold text-purple-600">&lt;CindaCodes&gt;</h1>
-      <ul className="flex gap-6 text-gray-700 font-medium">
-        <li>
-          <a href="#about" className="hover:text-purple-500">
-            About
-          </a>
-        </li>
-        <li>
-          <a href="#projects" className="hover:text-purple-500">
-            Projects
-          </a>
-        </li>
-        <li>
-          <a href="#contact" className="hover:text-purple-500">
-            Contact
-          </a>
-        </li>
-        <li>
-          <a href="#certifications-section" className="hover:text-purple-500">
-            Certifications
-          </a>
-        </li>
-      </ul>
-      
-    </nav>
+    <Navbar expand="lg" sticky="top" className="shadow-sm">
+      <Container>
+        <Navbar.Brand href="#home" className="fw-bold">
+          &lt;CindaCodes&gt;
+        </Navbar.Brand>
+
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="ms-auto align-items-center">
+            <Nav.Link href="#about">About</Nav.Link>
+            <Nav.Link href="#projects">Projects</Nav.Link>
+            <Nav.Link href="#certifications">Certifications</Nav.Link>
+            <Nav.Link href="#contact">Contact</Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
   );
 }
 
-export default Navbar;
+export default PortfolioNavbar;
