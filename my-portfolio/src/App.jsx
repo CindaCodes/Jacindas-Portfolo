@@ -1,16 +1,18 @@
-import Navbar from "./components/Navbar";
+import React, { useState } from "react";
+import PortfolioNavbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
 import Projects from "./components/Projects";
 import Certifications from "./components/Certifications";
 
 function App() {
+
   return (
     <div>
-      <Navbar />
+      <PortfolioNavbar />
       <Hero />
       <About />
-      <Projects /> 
+      <Projects />
       <Certifications />
     </div>
   );
