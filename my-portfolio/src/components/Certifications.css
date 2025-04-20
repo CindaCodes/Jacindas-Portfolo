@@ -1,7 +1,7 @@
 .certifications-section {
-  background: #fff;
-  padding: 4rem 2rem;
+  background: linear-gradient(to right, #fdfbfb, #ebedee);
   overflow: hidden;
+  padding: 4rem 2rem;
   text-align: center;
 }
 
@@ -11,9 +11,10 @@
 }
 
 .marquee {
+  overflow: hidden;
   position: relative;
   width: 100%;
-  overflow: hidden;
+  padding: 2rem 0;
 }
 
 .marquee-content {
@@ -33,7 +34,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: #f9f9f9;
+  background: #e6e6f9;
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin: 0 1rem;
@@ -81,25 +82,11 @@
   text-align: center;
 }
 
-.tech-list {
-  list-style-type: none;
-  padding: 0;
-  font-size: 1.1rem;
-  color: #333;
-  line-height: 2;
-}
-
-.tech-list li::before {
-  content: "💻 ";
-  margin-right: 0.5rem;
-  color: #6b21a8;
-}
-
 .tech-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1rem;
-  margin-top: 3rem;
+  margin-top: 1rem;
   font-size: 1.1rem;
   color: #333;
 }
@@ -110,6 +97,7 @@
   border-radius: 8px;
   text-align: center;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  background: #edf1f5;
 }
 
 @keyframes scroll {
@@ -121,7 +109,7 @@
   }
 }
 
-  @media (max-width: 965px) {
+@media (max-width: 965px) {
   .tech-stack {
     flex: 1 1 100%;
   }

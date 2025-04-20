@@ -103,7 +103,7 @@ const certifications = [
 const Certifications = () => {
   return (
     <section id="certifications" className="certifications-section">
-      <h2>🎓 Certifications</h2>
+      <h2 className="title">🎓 Certifications</h2>
       <div className="marquee">
         <div className="marquee-content">
           {certifications.concat(certifications).map((cert, index) => (

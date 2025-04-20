@@ -3,8 +3,11 @@ import "./Contact.css";
 
 const Contact = () => {
   return (
-    <section id="contact" className="contact-section">
-      <h2>📬 Get in Touch</h2>
+    <section
+      id="contact"
+      className="contact-section min-vh-100 align-items-center"
+    >
+      <h2 className="title">📬 Get in Touch</h2>
       <p>
         I'm excited to connect! Whether you have a question, a project idea, or
         just want to say hello, feel free to reach out.
@@ -29,7 +32,8 @@ const Contact = () => {
         <div className="contact-info">
           <h3>📫 Contact Details</h3>
           <p>
-            Email: <a href="mailto:cinda.codes@gmail.com">cinda.codes@gmail.com</a>
+            Email:{" "}
+            <a href="mailto:cinda.codes@gmail.com">cinda.codes@gmail.com</a>
           </p>
           <p>Location: Fort Collins, CO</p>
           <div className="social-links">

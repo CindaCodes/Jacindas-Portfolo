@@ -1,8 +1,13 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
+
 
 function About() {
   return (
-    <section id="about" className="py-5 bg-white text-dark px-3 px-md-5">
+    <section
+      id="about"
+      className="about py-5 text-dark px-3 px-md-5 min-vh-100 align-items-center d-flex"
+    >
       <motion.div
         className="container text-center"
         initial={{ opacity: 0, y: 40 }}
@@ -10,28 +15,41 @@ function About() {
         transition={{ duration: 0.8, ease: "easeOut" }}
         viewport={{ once: true }}
       >
-        <h2 className="h2 fw-bold mb-4">About Me</h2>
+        <h2 className="h2 fw-bold mb-4 title">About Me</h2>
         <p className="lead">
-          Hi, I’m Jacinda — a frontend developer with a love for clean design,
-          creative code, and an unholy amount of coffee ☕. I specialize in
-          crafting sleek, responsive interfaces using React and a dash of ✨good
-          energy✨.
+          I'm Jacinda, a software engineer who loves turning ideas into
+          interactive experiences. Whether I'm coding, designing, I'm always
+          building something exciting. I specialize in crafting sleek,
+          responsive interfaces using React and a dash of ✨good energy✨.
           <br />
           <br />
           When I’m not coding, you’ll find me on long walks with my dogs (yes,
           they have more followers than me), experimenting with new recipes, or
-          pretending not to cry over a really good novel. I also have a soft
-          spot for organizing things — codebases, bookshelves, Notion boards...
-          you name it.
+          pretending not to cry over a really good novel.
           <br />
           <br />
           I’m all about creating intuitive, beautiful web experiences that feel
           just right. Whether it's building a personal project or teaming up on
           something big, I bring passion, precision, and a good playlist.
+          <br />
+          <br />
+          <strong>My Philosophy:</strong> Driven to build, to explore new ideas,
+          to challenge the expected, and to collaborate with those who push me
+          to grow.
+        </p>
+        <br />
+        <br />
+        <p className="lead">
+          If you're interested in collaborating or just want to chat, feel free
+          to reach out through my{" "}
+          <Link to="/contact" className="text-decoration-underline">
+            Contact
+          </Link>{" "}
+          page.. I'd love to connect!
         </p>
       </motion.div>
     </section>
   );
 }
 
-export default About;
+export default About; // Ensure this is here

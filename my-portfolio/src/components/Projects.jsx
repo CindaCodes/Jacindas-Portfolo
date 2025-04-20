@@ -61,6 +61,7 @@ const projects = [
 const Projects = () => {
   return (
     <section id="projects" className="projects-section">
+      <h2 className="text-center m-5 title">💻 My Projects</h2>
       <div className="projects-grid">
         {projects.map((project, index) => (
           <motion.div
