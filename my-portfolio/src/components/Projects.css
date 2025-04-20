@@ -54,7 +54,7 @@
   text-decoration: underline;
 }
 
-/* Desktop layout: alternate image and text */
+
 @media (min-width: 768px) {
   .project-item {
     grid-template-columns: 1fr 1fr;
