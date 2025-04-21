@@ -1,4 +1,6 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import "./Contact.css";
 
 const Contact = () => {
@@ -37,20 +39,24 @@ const Contact = () => {
           </p>
           <p>Location: Fort Collins, CO</p>
           <div className="social-links">
-            <a
-              href="https://github.com/CindaCodes"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              GitHub
-            </a>
-            <a
-              href="https://www.linkedin.com/in/jacinda-bietz"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              LinkedIn
-            </a>
+            <div className="d-flex justify-content-between ms-5 gap-5">
+              <a
+                href="https://github.com/CindaCodes"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="GitHub"
+              >
+                <FontAwesomeIcon icon={faGithub} size="lg" />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/jacinda-bietz"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+              >
+                <FontAwesomeIcon icon={faLinkedin} size="lg" />
+              </a>
+            </div>
           </div>
         </div>
       </div>
