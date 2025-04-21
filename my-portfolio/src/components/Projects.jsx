@@ -1,4 +1,6 @@
 import { motion } from "framer-motion";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import "./Projects.css";
 
 const projects = [
@@ -60,35 +62,47 @@ const projects = [
 
 const Projects = () => {
   return (
-    <section id="projects" className="projects-section">
-      <h2 className="text-center m-5 title">💻 My Projects</h2>
-      <div className="projects-grid">
+    <section id="projects" className="projects-section container my-5">
+      <h2 className="text-center mb-4">💻 My Projects</h2>
+      <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
         {projects.map((project, index) => (
           <motion.div
             key={project.title}
-            className={`project-item ${index % 2 === 1 ? "reverse" : ""}`}
+            className="col"
             initial={{ opacity: 0, x: index % 2 === 1 ? 100 : -100 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, ease: "easeOut" }}
             viewport={{ once: true, amount: 0.3 }}
           >
-            <img
-              src={project.image}
-              alt={project.title}
-              className="project-image"
-            />
-            <div className="project-text">
-              <h3>{project.title}</h3>
-              <p>{project.description}</p>
-              <div className="project-links">
-                {project.demo && (
-                  <a href={project.demo} target="_blank" rel="noreferrer">
-                    Live Demo
+            <div className="card h-100">
+              <img
+                src={project.image}
+                alt={project.title}
+                className="card-img-top"
+              />
+              <div className="card-body">
+                <h5 className="card-title">{project.title}</h5>
+                <p className="card-text">{project.description}</p>
+                <div className="d-flex justify-content-between">
+                  {project.demo && (
+                    <a
+                      href={project.demo}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="btn btn-dark"
+                    >
+                      Live Demo
+                    </a>
+                  )}
+                  <a
+                    href={project.repo}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="btn btn-dark"
+                  >
+                    <FontAwesomeIcon icon={faGithub} /> GitHub
                   </a>
-                )}
-                <a href={project.repo} target="_blank" rel="noreferrer">
-                  GitHub
-                </a>
+                </div>
               </div>
             </div>
           </motion.div>
