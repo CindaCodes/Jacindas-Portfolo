@@ -29,7 +29,7 @@ export default function Hero() {
               Front-end developer, where precision meets <HeroTextSlider />
             </h1>
             <a
-              href="/public/Jacinda_Bietz_FrontEnd_Resume_2025.pdf"
+              href="/Jacinda_Bietz_FrontEnd_Resume_2025.pdf"
               className="btn btn-primary resume-download"
               download
               target="_blank"
