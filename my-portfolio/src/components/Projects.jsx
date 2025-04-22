@@ -96,8 +96,8 @@ const Projects = () => {
                     </a>
                   )}
                   <a href={project.repo} className="btn btn-dark">
-                    <i className="fab fa-github me-2"></i>
-                    GitHub
+                    <FontAwesomeIcon icon={faGithub} />
+                     {" "}GitHub
                   </a>
                 </div>
               </div>
