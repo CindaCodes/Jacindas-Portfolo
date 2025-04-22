@@ -1,3 +1,5 @@
+import React, { useState, useEffect } from "react";
+
 import HeroTextSlider from "./HeroTextSlider";
 import "./Hero.css";
 import { motion } from "framer-motion";

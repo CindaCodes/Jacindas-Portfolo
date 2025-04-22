@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react"; // Add this import
+import React, { useState, useEffect } from "react";
 import "./Hero.css";
 
 const words = ["Design", "Creativity", "Inspiration", "Innovation", "Art"];

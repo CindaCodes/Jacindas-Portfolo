@@ -1,3 +1,4 @@
+import React from "react";
 import { motion } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
@@ -94,13 +95,9 @@ const Projects = () => {
                       Live Demo
                     </a>
                   )}
-                  <a
-                    href={project.repo}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="btn btn-dark"
-                  >
-                    <FontAwesomeIcon icon={faGithub} /> GitHub
+                  <a href={project.repo} className="btn btn-dark">
+                    <i className="fab fa-github me-2"></i>
+                    GitHub
                   </a>
                 </div>
               </div>
