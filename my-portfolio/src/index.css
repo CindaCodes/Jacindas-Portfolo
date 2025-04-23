@@ -18,6 +18,7 @@ title {
 
 .next-page {
   text-decoration: none;
+  font-weight: bolder;
 }
 
 .next-page:hover {
