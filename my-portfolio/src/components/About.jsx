@@ -41,14 +41,14 @@ function About() {
         <p className="lead">
           If you're interested in collaborating or just want to chat, feel free
           to reach out. I'd love to connect!{" "}
-          <Link href="contact" className="next-page text-dark  mt-3">
+          <Link to="contact" className="next-page text-dark  mt-3">
             Contact Me for More Information.
           </Link>
         </p>
 
         <br />
         <br />
-        <Link href="projects" className="next-page text-muted mt-3">
+        <Link to="projects" className="next-page text-muted mt-3">
           Lets Go To My Projects Page.
           <span className="arrow">→</span>
         </Link>

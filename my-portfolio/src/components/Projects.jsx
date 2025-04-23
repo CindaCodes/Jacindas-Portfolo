@@ -106,7 +106,7 @@ const Projects = () => {
         ))}
       </div>
       <div className="text-center mt-5">
-        <Link href="/education" className="next-page text-muted">
+        <Link to="/education" className="next-page text-muted">
           Let’s Go To My Education Page.
           <span className="arrow">→</span>
         </Link>

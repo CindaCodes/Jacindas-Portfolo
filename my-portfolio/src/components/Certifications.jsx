@@ -160,7 +160,7 @@ const Certifications = () => {
         </div>
       </div>
       <div>
-        <Link href="contact" className="next-page text-muted mt-5">
+        <Link to="contact" className="next-page text-muted mt-5">
           Contact Me for More Information
           <span className="arrow">→</span>
         </Link>
