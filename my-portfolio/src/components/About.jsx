@@ -41,17 +41,17 @@ function About() {
         <p className="lead">
           If you're interested in collaborating or just want to chat, feel free
           to reach out. I'd love to connect!{" "}
-          <a href="contact" className="next-page text-dark  mt-3">
+          <Link href="contact" className="next-page text-dark  mt-3">
             Contact Me for More Information.
-          </a>
+          </Link>
         </p>
 
         <br />
         <br />
-        <a href="projects" className="next-page text-muted mt-3">
+        <Link href="projects" className="next-page text-muted mt-3">
           Lets Go To My Projects Page.
           <span className="arrow">→</span>
-        </a>
+        </Link>
       </motion.div>
     </section>
   );

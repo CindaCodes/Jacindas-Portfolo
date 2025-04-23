@@ -159,10 +159,10 @@ const Certifications = () => {
         </div>
       </div>
       <div>
-        <a href="contact" className="next-page text-muted mt-5">
+        <Link href="contact" className="next-page text-muted mt-5">
           Contact Me for More Information
           <span className="arrow">→</span>
-        </a>
+        </Link>
       </div>
     </section>
   );
