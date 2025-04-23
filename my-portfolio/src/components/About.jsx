@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
-
 function About() {
   return (
     <section
@@ -17,7 +16,7 @@ function About() {
       >
         <h2 className="h2 fw-bold mb-4 title">About Me</h2>
         <p className="lead">
-          I'm Jacinda, a software engineer who loves turning ideas into
+          I'm Jacinda, a Junior Front-end developer who loves turning ideas into
           interactive experiences. Whether I'm coding, designing, I'm always
           building something exciting. I specialize in crafting sleek,
           responsive interfaces using React and a dash of ✨good energy✨.
@@ -41,15 +40,21 @@ function About() {
         <br />
         <p className="lead">
           If you're interested in collaborating or just want to chat, feel free
-          to reach out through my{" "}
-          <Link to="/contact" className="text-decoration-underline">
-            Contact
-          </Link>{" "}
-          page.. I'd love to connect!
+          to reach out. I'd love to connect!{" "}
+          <a href="contact" className="next-page text-dark  mt-3">
+            Contact Me for More Information.
+          </a>
         </p>
+
+        <br />
+        <br />
+        <a href="projects" className="next-page text-muted mt-3">
+          Lets Go To My Projects Page.
+          <span className="arrow">→</span>
+        </a>
       </motion.div>
     </section>
   );
 }
 
-export default About; // Ensure this is here
+export default About; 

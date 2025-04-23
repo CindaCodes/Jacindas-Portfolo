@@ -35,10 +35,10 @@ function PortfolioNavbar() {
             </Nav.Link>
             <Nav.Link
               as={Link}
-              to="/certifications"
+              to="/education"
               onClick={() => setExpanded(false)}
             >
-              Certifications
+              Education
             </Nav.Link>
             <Nav.Link
               as={Link}

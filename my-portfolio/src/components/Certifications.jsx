@@ -102,8 +102,8 @@ const certifications = [
 
 const Certifications = () => {
   return (
-    <section id="certifications" className="certifications-section">
-      <h2 className="title">🎓 Certifications</h2>
+    <section id="education" className="certifications-section">
+      <h2 className="title">🎓 Education</h2>
       <div className="marquee">
         <div className="marquee-content">
           {certifications.concat(certifications).map((cert, index) => (
@@ -136,7 +136,7 @@ const Certifications = () => {
 
         <div className="tech-stack">
           <h3 className="featured-title">🧰 Tech Stack</h3>
-          <div className="tech-grid">
+          <div className="tech-grid mb-4">
             <div>AI</div>
             <div>APIs</div>
             <div>Bootstrap</div>
@@ -157,6 +157,12 @@ const Certifications = () => {
             <div>VS Code</div>
           </div>
         </div>
+      </div>
+      <div>
+        <a href="contact" className="next-page text-muted mt-5">
+          Contact Me for More Information
+          <span className="arrow">→</span>
+        </a>
       </div>
     </section>
   );

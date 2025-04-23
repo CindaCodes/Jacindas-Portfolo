@@ -96,14 +96,19 @@ const Projects = () => {
                     </a>
                   )}
                   <a href={project.repo} className="btn btn-dark">
-                    <FontAwesomeIcon icon={faGithub} />
-                     {" "}GitHub
+                    <FontAwesomeIcon icon={faGithub} /> GitHub
                   </a>
                 </div>
               </div>
             </div>
           </motion.div>
         ))}
+      </div>
+      <div className="text-center mt-5">
+        <a href="/education" className="next-page text-muted">
+          Let’s Go To My Education Page.
+          <span className="arrow">→</span>
+        </a>
       </div>
     </section>
   );

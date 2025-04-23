@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from "react";
-
+import React, { useState, useEffect } from "react"
 import HeroTextSlider from "./HeroTextSlider";
 import "./Hero.css";
 import { motion } from "framer-motion";
@@ -38,6 +37,10 @@ export default function Hero() {
               rel="noopener noreferrer"
             >
               Download My Résumé
+            </a>
+            <a href="about" className="next-page text-muted mt-3">
+              Would you like to learn more about me.
+              <span className="arrow">→</span>
             </a>
           </div>
         </div>
