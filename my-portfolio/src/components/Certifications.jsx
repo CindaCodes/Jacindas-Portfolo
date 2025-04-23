@@ -1,5 +1,6 @@
 import React from "react";
 import "./Certifications.css";
+import { Link } from "react-router-dom";
 
 const certifications = [
   {
