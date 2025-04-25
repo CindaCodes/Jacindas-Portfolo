@@ -90,13 +90,18 @@ const Projects = () => {
                     <a
                       href={project.demo}
                       target="_blank"
-                      rel="noreferrer"
+                      rel="noopener noreferrer"
                       className="btn btn-dark"
                     >
                       Live Demo
                     </a>
                   )}
-                  <a href={project.repo} className="btn btn-dark">
+                  <a
+                    href={project.repo}
+                    className="btn btn-dark"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
                     <FontAwesomeIcon icon={faGithub} /> GitHub
                   </a>
                 </div>
