@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
 
 function About() {
   return (
@@ -43,18 +42,8 @@ function About() {
         <br />
         <p className="lead">
           If you're interested in collaborating or just want to chat, feel free
-          to reach out. I'd love to connect!{" "}
-          <Link to="/contact" className="next-page text-dark  mt-3">
-            Contact Me for More Information.
-          </Link>
+          to reach out. I'd love to connect!
         </p>
-
-        <br />
-        <br />
-        <Link to="/projects" className="next-page text-muted mt-3">
-          Lets Go To My Projects Page.
-          <span className="arrow">→</span>
-        </Link>
       </motion.div>
     </section>
   );

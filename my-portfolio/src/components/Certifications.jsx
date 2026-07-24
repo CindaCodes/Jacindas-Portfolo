@@ -1,6 +1,5 @@
 import React from "react";
 import "./Certifications.css";
-import { Link } from "react-router-dom";
 
 const certifications = [
   {
@@ -158,12 +157,6 @@ const Certifications = () => {
             <div>VS Code</div>
           </div>
         </div>
-      </div>
-      <div>
-        <Link to="/contact" className="next-page text-muted mt-5">
-          Contact Me for More Information
-          <span className="arrow">→</span>
-        </Link>
       </div>
     </section>
   );

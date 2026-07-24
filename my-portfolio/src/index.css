@@ -2,6 +2,31 @@ html {
   scroll-behavior: smooth;
 }
 
+section[id] {
+  scroll-margin-top: 72px;
+}
+
+.navbar .nav-link {
+  position: relative;
+  transition: color 0.2s ease;
+}
+
+.navbar .nav-link.active-link {
+  color: var(--color-accent) !important;
+  font-weight: 600;
+}
+
+.navbar .nav-link.active-link::after {
+  content: "";
+  position: absolute;
+  left: 0.5rem;
+  right: 0.5rem;
+  bottom: 0;
+  height: 2px;
+  background: var(--color-accent);
+  border-radius: 2px;
+}
+
 :root {
   --font-title: "Inter", sans-serif;
   --font-text: "Inter", sans-serif;
@@ -19,29 +44,4 @@ body {
 title {
   font-family: var(--font-title);
   font-weight: 700;
-}
-
-.next-page {
-  text-decoration: none;
-  font-weight: bolder;
-}
-
-.next-page:hover {
-  font-weight: bold;
-}
-
-.arrow {
-  animation: bounceRight 1s infinite;
-  display: inline-block;
-  margin-left: 8px;
-}
-
-@keyframes bounceRight {
-  0%,
-  100% {
-    transform: translateX(0);
-  }
-  50% {
-    transform: translateX(5px);
-  }
 }

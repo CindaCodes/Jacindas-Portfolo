@@ -1,12 +1,11 @@
 import React, { useState, useEffect } from "react"
-import { Link } from "react-router-dom";
 import HeroTextSlider from "./HeroTextSlider";
 import "./Hero.css";
 import { motion } from "framer-motion";
 
 export default function Hero() {
   return (
-    <section className="hero-section">
+    <section id="home" className="hero-section">
       <div className="container hero-content">
         <div className="row align-items-center">
           <div className="col-md-4 text-center">
@@ -40,10 +39,6 @@ export default function Hero() {
             >
               Download My Résumé
             </a>
-            <Link to="/about" className="next-page hero-next-page mt-3">
-              Would you like to learn more about me.
-              <span className="arrow">→</span>
-            </Link>
           </div>
         </div>
       </div>

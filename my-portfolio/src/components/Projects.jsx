@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
@@ -109,12 +108,6 @@ const Projects = () => {
             </div>
           </motion.div>
         ))}
-      </div>
-      <div className="text-center mt-5">
-        <Link to="/education" className="next-page text-muted">
-          Let’s Go To My Education Page.
-          <span className="arrow">→</span>
-        </Link>
       </div>
     </section>
   );
