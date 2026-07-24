@@ -40,7 +40,7 @@ export default function Hero() {
             >
               Download My Résumé
             </a>
-            <Link to="/about" className="next-page text-muted mt-3">
+            <Link to="/about" className="next-page hero-next-page mt-3">
               Would you like to learn more about me.
               <span className="arrow">→</span>
             </Link>
