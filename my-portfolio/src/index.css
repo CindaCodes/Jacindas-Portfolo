@@ -33,15 +33,6 @@ section[id] {
   --border-color: #232c42;
 }
 
-.section-kicker {
-  font-family: var(--font-mono);
-  font-size: 0.85rem;
-  font-weight: 500;
-  color: var(--color-accent);
-  letter-spacing: 0.02em;
-  margin-bottom: 0.5rem;
-}
-
 body {
   font-family: var(--font-text);
   background-color: var(--bg-page);

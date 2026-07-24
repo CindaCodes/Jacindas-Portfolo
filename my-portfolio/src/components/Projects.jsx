@@ -64,7 +64,6 @@ const projects = [
 const Projects = () => {
   return (
     <section id="projects" className="projects-section container my-5">
-      <p className="section-kicker text-center">// projects</p>
       <h2 className="text-center mb-4">My Projects</h2>
       <div className="github-activity">
         <h3 className="github-activity-title">GitHub Activity</h3>

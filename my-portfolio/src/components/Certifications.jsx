@@ -92,7 +92,6 @@ const certifications = [
 const Certifications = () => {
   return (
     <section id="education" className="certifications-section">
-      <p className="section-kicker">// education</p>
       <h2 className="title">Education</h2>
       <div className="degree-card">
         <span className="degree-badge">In Progress</span>

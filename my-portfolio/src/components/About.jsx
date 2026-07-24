@@ -13,7 +13,6 @@ function About() {
         transition={{ duration: 0.8, ease: "easeOut" }}
         viewport={{ once: true }}
       >
-        <p className="section-kicker">// about</p>
         <h2 className="h2 fw-bold mb-4 title">About Me</h2>
         <p className="lead">
           I'm Jacinda, an aspiring cybersecurity professional who loves

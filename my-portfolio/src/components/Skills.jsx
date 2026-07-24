@@ -1,33 +1,84 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faJs,
+  faPython,
+  faHtml5,
+  faCss3,
+  faReact,
+  faBootstrap,
+  faNodeJs,
+  faLinux,
+  faGitAlt,
+  faGithub,
+  faFigma,
+} from "@fortawesome/free-brands-svg-icons";
+import {
+  faShieldHalved,
+  faNetworkWired,
+  faLaptopCode,
+  faCode,
+  faCloud,
+  faServer,
+  faPlug,
+  faMobileScreen,
+  faMagnifyingGlass,
+  faRobot,
+} from "@fortawesome/free-solid-svg-icons";
 import "./Skills.css";
 
 const skillCategories = [
   {
     category: "Languages",
-    skills: ["JavaScript", "Python", "HTML", "CSS"],
+    skills: [
+      { name: "JavaScript", icon: faJs },
+      { name: "Python", icon: faPython },
+      { name: "HTML", icon: faHtml5 },
+      { name: "CSS", icon: faCss3 },
+    ],
   },
   {
     category: "Frameworks & Libraries",
-    skills: ["React", "Bootstrap", "Node.js"],
+    skills: [
+      { name: "React", icon: faReact },
+      { name: "Bootstrap", icon: faBootstrap },
+      { name: "Node.js", icon: faNodeJs },
+    ],
   },
   {
     category: "Security & Networking",
-    skills: ["Cybersecurity Fundamentals", "Networking", "Linux"],
+    skills: [
+      { name: "Cybersecurity Fundamentals", icon: faShieldHalved },
+      { name: "Networking", icon: faNetworkWired },
+      { name: "Linux", icon: faLinux },
+    ],
   },
   {
     category: "Tools & Platforms",
-    skills: ["Git", "GitHub", "VS Code", "Figma", "Colab", "Netlify", "Hosting"],
+    skills: [
+      { name: "Git", icon: faGitAlt },
+      { name: "GitHub", icon: faGithub },
+      { name: "VS Code", icon: faLaptopCode },
+      { name: "Figma", icon: faFigma },
+      { name: "Colab", icon: faCode },
+      { name: "Netlify", icon: faCloud },
+      { name: "Hosting", icon: faServer },
+    ],
   },
   {
     category: "Concepts & Practices",
-    skills: ["APIs", "Responsive Design", "SEO", "AI"],
+    skills: [
+      { name: "APIs", icon: faPlug },
+      { name: "Responsive Design", icon: faMobileScreen },
+      { name: "SEO", icon: faMagnifyingGlass },
+      { name: "AI", icon: faRobot },
+    ],
   },
 ];
 
 const Skills = () => {
   return (
     <section id="skills" className="skills-section">
-      <p className="section-kicker">// skills</p>
       <h2 className="title">Skills</h2>
       <div className="skills-grid">
         {skillCategories.map((group) => (
@@ -35,8 +86,9 @@ const Skills = () => {
             <h3 className="skill-category-title">{group.category}</h3>
             <div className="skill-tags">
               {group.skills.map((skill) => (
-                <span className="skill-tag" key={skill}>
-                  {skill}
+                <span className="skill-tag" key={skill.name}>
+                  <FontAwesomeIcon icon={skill.icon} className="skill-icon" />
+                  {skill.name}
                 </span>
               ))}
             </div>

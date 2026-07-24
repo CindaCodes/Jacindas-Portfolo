@@ -9,7 +9,6 @@ const Contact = () => {
       id="contact"
       className="contact-section min-vh-100 align-items-center"
     >
-      <p className="section-kicker">// contact</p>
       <h2 className="title">Get in Touch</h2>
       <p>
         I'm excited to connect! Whether you have a question, a project idea, or
