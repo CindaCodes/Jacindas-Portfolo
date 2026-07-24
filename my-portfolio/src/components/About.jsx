@@ -4,7 +4,7 @@ function About() {
   return (
     <section
       id="about"
-      className="about py-5 text-dark px-3 px-md-5 min-vh-100 align-items-center d-flex"
+      className="about py-5 px-3 px-md-5 min-vh-100 align-items-center d-flex"
     >
       <motion.div
         className="container text-center"

@@ -6,8 +6,61 @@ section[id] {
   scroll-margin-top: 72px;
 }
 
+:root {
+  --font-title: "Inter", sans-serif;
+  --font-text: "Inter", sans-serif;
+  --color-navy: #0b1f3a;
+  --color-navy-dark: #081527;
+  --color-slate: #334155;
+  --color-accent: #2563eb;
+  --color-accent-dark: #1d4ed8;
+
+  --bg-page: #ffffff;
+  --bg-alt: #f9f9f9;
+  --bg-card: #ffffff;
+  --text-primary: #1e293b;
+  --text-secondary: #58636f;
+  --border-color: #e2e8f0;
+}
+
+[data-theme="dark"] {
+  --bg-page: #0f172a;
+  --bg-alt: #111c30;
+  --bg-card: #1a2740;
+  --text-primary: #e5e9f0;
+  --text-secondary: #9aa7bb;
+  --border-color: #2a3b57;
+}
+
+body {
+  font-family: var(--font-text);
+  background-color: var(--bg-page);
+  color: var(--text-primary);
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+title {
+  font-family: var(--font-title);
+  font-weight: 700;
+}
+
+.about {
+  background-color: var(--bg-page);
+  color: var(--text-primary);
+}
+
+.navbar {
+  background-color: var(--bg-page) !important;
+  transition: background-color 0.25s ease;
+}
+
+.navbar .navbar-brand {
+  color: var(--text-primary) !important;
+}
+
 .navbar .nav-link {
   position: relative;
+  color: var(--text-primary);
   transition: color 0.2s ease;
 }
 
@@ -27,21 +80,21 @@ section[id] {
   border-radius: 2px;
 }
 
-:root {
-  --font-title: "Inter", sans-serif;
-  --font-text: "Inter", sans-serif;
-  --color-navy: #0b1f3a;
-  --color-navy-dark: #081527;
-  --color-slate: #334155;
-  --color-accent: #2563eb;
-  --color-accent-dark: #1d4ed8;
+.theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  margin-left: 0.5rem;
+  background: transparent;
+  border: 1px solid var(--border-color);
+  border-radius: 999px;
+  color: var(--text-primary);
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
 }
 
-body {
-  font-family: var(--font-text);
-}
-
-title {
-  font-family: var(--font-title);
-  font-weight: 700;
+.theme-toggle:hover {
+  background-color: var(--bg-alt);
 }

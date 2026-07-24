@@ -65,6 +65,21 @@ const Projects = () => {
   return (
     <section id="projects" className="projects-section container my-5">
       <h2 className="text-center mb-4">My Projects</h2>
+      <div className="github-activity">
+        <h3 className="github-activity-title">GitHub Activity</h3>
+        <a
+          href="https://github.com/CindaCodes"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="github-chart-link"
+        >
+          <img
+            src="https://ghchart.rshah.org/2563eb/CindaCodes"
+            alt="Jacinda's GitHub contribution graph"
+            className="github-chart"
+          />
+        </a>
+      </div>
       <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
         {projects.map((project, index) => (
           <motion.div

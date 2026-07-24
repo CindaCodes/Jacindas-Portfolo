@@ -1,7 +1,9 @@
 .contact-section {
-  background-color: #f9f9f9;
+  background-color: var(--bg-alt);
+  color: var(--text-primary);
   padding: 4rem 2rem;
   text-align: center;
+  transition: background-color 0.25s ease;
 }
 
 .contact-section h2 {
@@ -12,7 +14,7 @@
 .contact-section p {
   font-size: 1.1rem;
   margin-bottom: 2rem;
-  color: #555;
+  color: var(--text-secondary);
 }
 
 .contact-container {
@@ -38,9 +40,11 @@
 .contact-form input,
 .contact-form textarea {
   padding: 0.75rem;
-  border: 1px solid #ccc;
+  border: 1px solid var(--border-color);
   border-radius: 8px;
   font-size: 1rem;
+  background-color: var(--bg-card);
+  color: var(--text-primary);
 }
 
 .contact-form button {
@@ -71,7 +75,7 @@
 
 .contact-info p {
   margin: 0.5rem 0;
-  color: #333;
+  color: var(--text-primary);
 }
 
 .contact-info a {
