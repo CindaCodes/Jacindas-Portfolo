@@ -25,13 +25,14 @@ export default function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
             >
-              Hi, I'm Jacinda 👋
+              Hi, I'm Jacinda
             </motion.h2>
             <h1>
-              Front-end developer, where precision meets <HeroTextSlider />
+              Aspiring cybersecurity professional, where curiosity meets{" "}
+              <HeroTextSlider />
             </h1>
             <a
-              href="/Jacinda_Bietz_FrontEnd_Resume_2025.pdf"
+              href="/Jacinda_Bietz_Resume_Cybersecurity.pdf"
               className="btn btn-primary resume-download"
               download
               target="_blank"

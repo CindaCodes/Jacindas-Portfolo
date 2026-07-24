@@ -3,8 +3,13 @@ html {
 }
 
 :root {
-  --font-title: "Rubik Doodle Shadow", cursive;
-  --font-text: "Rubik", sans-serif;
+  --font-title: "Inter", sans-serif;
+  --font-text: "Inter", sans-serif;
+  --color-navy: #0b1f3a;
+  --color-navy-dark: #081527;
+  --color-slate: #334155;
+  --color-accent: #2563eb;
+  --color-accent-dark: #1d4ed8;
 }
 
 body {
@@ -13,7 +18,7 @@ body {
 
 title {
   font-family: var(--font-title);
-  font-weight: 400;
+  font-weight: 700;
 }
 
 .next-page {

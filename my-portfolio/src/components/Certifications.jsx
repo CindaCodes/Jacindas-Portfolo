@@ -93,7 +93,7 @@ const certifications = [
 const Certifications = () => {
   return (
     <section id="education" className="certifications-section">
-      <h2 className="title">🎓 Education</h2>
+      <h2 className="title">Education</h2>
       <div className="marquee">
         <div className="marquee-content">
           {certifications.concat(certifications).map((cert, index) => (
@@ -116,7 +116,7 @@ const Certifications = () => {
       </div>
       <div className="featured-section">
         <div className="featured-diploma">
-          <h3 className="featured-title">📜 Verified Diploma</h3>
+          <h3 className="featured-title">Verified Diploma</h3>
           <img
             src="https://s3.amazonaws.com/shecodesio-production/user_diplomas/verified_diplomas/000/001/086/original/f3ea6e63a6469f0ee983754d23b8f20b.png?1744908524"
             alt="SheCodes Verified Diploma"
@@ -125,20 +125,23 @@ const Certifications = () => {
         </div>
 
         <div className="tech-stack">
-          <h3 className="featured-title">🧰 Tech Stack</h3>
+          <h3 className="featured-title">Tech Stack</h3>
           <div className="tech-grid mb-4">
             <div>AI</div>
             <div>APIs</div>
             <div>Bootstrap</div>
             <div>Colab</div>
             <div>CSS</div>
+            <div>Cybersecurity Fundamentals</div>
             <div>Figma</div>
             <div>Git</div>
             <div>GitHub</div>
             <div>Hosting</div>
             <div>HTML</div>
             <div>JavaScript</div>
+            <div>Linux</div>
             <div>Netlify</div>
+            <div>Networking</div>
             <div>Node.js</div>
             <div>Python</div>
             <div>React</div>

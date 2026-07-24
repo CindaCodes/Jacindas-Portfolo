@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./Hero.css";
 
-const words = ["Design", "Creativity", "Inspiration", "Innovation", "Art"];
+const words = ["Vigilance", "Integrity", "Resilience", "Defense", "Trust"];
 
 export default function HeroTextSlider() {
   const [index, setIndex] = useState(0);

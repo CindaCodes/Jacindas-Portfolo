@@ -16,25 +16,28 @@ function About() {
       >
         <h2 className="h2 fw-bold mb-4 title">About Me</h2>
         <p className="lead">
-          I'm Jacinda, a Junior Front-end developer who loves turning ideas into
-          interactive experiences. Whether I'm coding, designing, I'm always
-          building something exciting. I specialize in crafting sleek,
-          responsive interfaces using React and a dash of ✨good energy✨.
+          I'm Jacinda, an aspiring cybersecurity professional who loves
+          digging into how systems work so I can help keep them safe.
+          Whether I'm studying threats, exploring networks, or picking apart
+          a vulnerability, I'm always sharpening my skills. I bring a
+          developer's eye for detail to a security mindset — curious,
+          methodical, and always asking "what if?"
           <br />
           <br />
-          When I’m not coding, you’ll find me on long walks with my dogs (yes,
+          When I’m not learning, you’ll find me on long walks with my dogs (yes,
           they have more followers than me), experimenting with new recipes, or
           pretending not to cry over a really good novel.
           <br />
           <br />
-          I’m all about creating intuitive, beautiful web experiences that feel
-          just right. Whether it's building a personal project or teaming up on
-          something big, I bring passion, precision, and a good playlist.
+          I’m all about protecting the systems and people behind the screen —
+          spotting risks before they become problems. Whether it's a personal
+          challenge or teaming up on something bigger, I bring curiosity,
+          precision, and a good playlist.
           <br />
           <br />
-          <strong>My Philosophy:</strong> Driven to build, to explore new ideas,
-          to challenge the expected, and to collaborate with those who push me
-          to grow.
+          <strong>My Philosophy:</strong> Driven to investigate, to question
+          assumptions, to challenge the expected, and to collaborate with
+          those who push me to grow.
         </p>
         <br />
         <br />
