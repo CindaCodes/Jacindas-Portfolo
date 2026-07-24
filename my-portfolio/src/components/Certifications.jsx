@@ -92,6 +92,7 @@ const certifications = [
 const Certifications = () => {
   return (
     <section id="education" className="certifications-section">
+      <p className="section-kicker">// education</p>
       <h2 className="title">Education</h2>
       <div className="degree-card">
         <span className="degree-badge">In Progress</span>
@@ -129,33 +130,6 @@ const Certifications = () => {
             alt="SheCodes Verified Diploma"
             className="big-diploma"
           />
-        </div>
-
-        <div className="tech-stack">
-          <h3 className="featured-title">Tech Stack</h3>
-          <div className="tech-grid mb-4">
-            <div>AI</div>
-            <div>APIs</div>
-            <div>Bootstrap</div>
-            <div>Colab</div>
-            <div>CSS</div>
-            <div>Cybersecurity Fundamentals</div>
-            <div>Figma</div>
-            <div>Git</div>
-            <div>GitHub</div>
-            <div>Hosting</div>
-            <div>HTML</div>
-            <div>JavaScript</div>
-            <div>Linux</div>
-            <div>Netlify</div>
-            <div>Networking</div>
-            <div>Node.js</div>
-            <div>Python</div>
-            <div>React</div>
-            <div>Responsive</div>
-            <div>SEO</div>
-            <div>VS Code</div>
-          </div>
         </div>
       </div>
     </section>

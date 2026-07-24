@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from "react"
 import HeroTextSlider from "./HeroTextSlider";
+import HeroParticles from "./HeroParticles";
 import "./Hero.css";
 import { motion } from "framer-motion";
 
 export default function Hero() {
   return (
     <section id="home" className="hero-section">
+      <HeroParticles />
       <div className="container hero-content">
         <div className="row align-items-center">
           <div className="col-md-4 text-center">

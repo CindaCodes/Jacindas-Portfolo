@@ -9,6 +9,7 @@ const Contact = () => {
       id="contact"
       className="contact-section min-vh-100 align-items-center"
     >
+      <p className="section-kicker">// contact</p>
       <h2 className="title">Get in Touch</h2>
       <p>
         I'm excited to connect! Whether you have a question, a project idea, or
@@ -38,25 +39,31 @@ const Contact = () => {
             <a href="mailto:cinda.codes@gmail.com">cinda.codes@gmail.com</a>
           </p>
           <p>Location: Fort Collins, CO</p>
-          <div className="social-links">
-            <div className="d-flex justify-content-between ms-5 gap-5">
-              <a
-                href="https://github.com/CindaCodes"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="GitHub"
-              >
-                <FontAwesomeIcon icon={faGithub} size="lg" />
-              </a>
-              <a
-                href="https://www.linkedin.com/in/jacinda-bietz"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="LinkedIn"
-              >
-                <FontAwesomeIcon icon={faLinkedin} size="lg" />
-              </a>
-            </div>
+          <div className="web-presence">
+            <a
+              href="https://github.com/CindaCodes"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="presence-card"
+            >
+              <FontAwesomeIcon icon={faGithub} size="lg" className="presence-icon" />
+              <div>
+                <span className="presence-label">GitHub</span>
+                <span className="presence-handle">@CindaCodes</span>
+              </div>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/jacinda-bietz"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="presence-card"
+            >
+              <FontAwesomeIcon icon={faLinkedin} size="lg" className="presence-icon" />
+              <div>
+                <span className="presence-label">LinkedIn</span>
+                <span className="presence-handle">jacinda-bietz</span>
+              </div>
+            </a>
           </div>
         </div>
       </div>

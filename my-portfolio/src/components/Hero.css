@@ -6,6 +6,23 @@ body .hero-section {
   margin: auto;
   overflow: auto;
   padding-top: 60px;
+  position: relative;
+}
+
+.hero-particles {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.hero-particles canvas {
+  display: block;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
 }
 
 .wave {

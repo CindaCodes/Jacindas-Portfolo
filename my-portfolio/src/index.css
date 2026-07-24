@@ -9,6 +9,7 @@ section[id] {
 :root {
   --font-title: "Inter", sans-serif;
   --font-text: "Inter", sans-serif;
+  --font-mono: "JetBrains Mono", "Fira Code", monospace;
   --color-navy: #0b1f3a;
   --color-navy-dark: #081527;
   --color-slate: #334155;
@@ -24,12 +25,21 @@ section[id] {
 }
 
 [data-theme="dark"] {
-  --bg-page: #0f172a;
-  --bg-alt: #111c30;
-  --bg-card: #1a2740;
+  --bg-page: #090d16;
+  --bg-alt: #0d1220;
+  --bg-card: #131a2b;
   --text-primary: #e5e9f0;
-  --text-secondary: #9aa7bb;
-  --border-color: #2a3b57;
+  --text-secondary: #8a96ac;
+  --border-color: #232c42;
+}
+
+.section-kicker {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--color-accent);
+  letter-spacing: 0.02em;
+  margin-bottom: 0.5rem;
 }
 
 body {
@@ -56,6 +66,7 @@ title {
 
 .navbar .navbar-brand {
   color: var(--text-primary) !important;
+  font-family: var(--font-mono);
 }
 
 .navbar .nav-link {

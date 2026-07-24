@@ -1,0 +1,71 @@
+.cursor-dot,
+.cursor-ring {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  border-radius: 50%;
+  z-index: 9999;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.custom-cursor-active .cursor-dot,
+.custom-cursor-active .cursor-ring {
+  opacity: 1;
+}
+
+.custom-cursor-active.custom-cursor-hidden .cursor-dot,
+.custom-cursor-active.custom-cursor-hidden .cursor-ring {
+  opacity: 0;
+}
+
+.cursor-dot {
+  width: 8px;
+  height: 8px;
+  margin: -4px 0 0 -4px;
+  background: var(--color-accent);
+}
+
+.cursor-ring {
+  width: 34px;
+  height: 34px;
+  margin: -17px 0 0 -17px;
+  border: 1.5px solid var(--color-accent);
+  background: transparent;
+  transition: width 0.2s ease, height 0.2s ease, margin 0.2s ease,
+    background-color 0.2s ease, transform 0.05s linear;
+}
+
+.custom-cursor-hover .cursor-ring {
+  width: 56px;
+  height: 56px;
+  margin: -28px 0 0 -28px;
+  background: rgba(37, 99, 235, 0.12);
+}
+
+.custom-cursor-down .cursor-ring {
+  width: 26px;
+  height: 26px;
+  margin: -13px 0 0 -13px;
+}
+
+.custom-cursor-down .cursor-dot {
+  width: 6px;
+  height: 6px;
+  margin: -3px 0 0 -3px;
+}
+
+@media (pointer: fine) and (hover: hover) {
+  .custom-cursor-active,
+  .custom-cursor-active a,
+  .custom-cursor-active button,
+  .custom-cursor-active [role="button"] {
+    cursor: none;
+  }
+
+  .custom-cursor-active input,
+  .custom-cursor-active textarea {
+    cursor: text;
+  }
+}
