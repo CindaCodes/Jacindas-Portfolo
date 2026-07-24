@@ -94,6 +94,14 @@ const Certifications = () => {
   return (
     <section id="education" className="certifications-section">
       <h2 className="title">Education</h2>
+      <div className="degree-card">
+        <span className="degree-badge">In Progress</span>
+        <h3 className="degree-title">B.S. in Computer Science</h3>
+        <p className="degree-school">Colorado State University</p>
+        <p className="degree-concentration">
+          Concentration in Networks &amp; Security
+        </p>
+      </div>
       <div className="marquee">
         <div className="marquee-content">
           {certifications.concat(certifications).map((cert, index) => (

@@ -10,6 +10,49 @@
   margin-bottom: 2rem;
 }
 
+.degree-card {
+  max-width: 480px;
+  margin: 0 auto 2.5rem;
+  padding: 1.75rem 2rem;
+  background: #fff;
+  border-left: 4px solid var(--color-accent);
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.degree-badge {
+  display: inline-block;
+  margin-bottom: 0.75rem;
+  padding: 0.2rem 0.75rem;
+  background: #eff6ff;
+  color: var(--color-accent-dark);
+  font-size: 0.8rem;
+  font-weight: 600;
+  border-radius: 999px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.degree-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+  color: var(--color-navy);
+}
+
+.degree-school {
+  font-size: 1.1rem;
+  color: var(--color-slate);
+  margin-bottom: 0.25rem;
+}
+
+.degree-concentration {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 0;
+}
+
 .marquee {
   overflow: hidden;
   position: relative;
