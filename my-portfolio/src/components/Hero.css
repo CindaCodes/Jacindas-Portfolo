@@ -100,12 +100,41 @@ body .hero-section {
 
 .hero-img-frame {
   position: relative;
-  display: flex;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
+  padding: 6px;
+  border-radius: 50%;
+}
+
+.hero-img-frame::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: conic-gradient(
+    from 0deg,
+    var(--color-accent),
+    #38bdf8,
+    var(--color-accent)
+  );
+  animation: spin-border 5s linear infinite;
+}
+
+@keyframes spin-border {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-img-frame::before {
+    animation: none;
+  }
 }
 
 .hero-img {
+  position: relative;
   width: 250px;
   object-fit: cover;
   border-radius: 50%;
