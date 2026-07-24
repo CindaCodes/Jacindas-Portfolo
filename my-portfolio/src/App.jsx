@@ -1,4 +1,5 @@
 import React from "react";
+import SmoothScroll from "./components/SmoothScroll";
 import CustomCursor from "./components/CustomCursor";
 import PortfolioNavbar from "./components/Navbar";
 import Hero from "./components/Hero";
@@ -10,7 +11,7 @@ import Contact from "./components/Contact";
 
 function App() {
   return (
-    <>
+    <SmoothScroll>
       <CustomCursor />
       <PortfolioNavbar />
       <Hero />
@@ -19,7 +20,7 @@ function App() {
       <Skills />
       <Certifications />
       <Contact />
-    </>
+    </SmoothScroll>
   );
 }
 

@@ -7,14 +7,17 @@
 }
 
 .skills-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 1.5rem;
   max-width: 1000px;
   margin: 2rem auto 0;
 }
 
 .skill-category {
+  flex: 1 1 260px;
+  max-width: 300px;
   background: var(--bg-card);
   border: 1px solid var(--border-color);
   border-radius: 12px;
