@@ -150,4 +150,8 @@
   .certifications-section h2 {
     font-size: 2rem;
   }
+
+  .big-diploma {
+    max-width: 100%;
+  }
 }
